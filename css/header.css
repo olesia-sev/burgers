@@ -1,5 +1,3 @@
-
-
 .header__top-container {
 	width: 940px;
 	display: flex;
@@ -15,7 +13,7 @@
 .header__menu {
 	display: flex;
 	margin-left: auto;
-	margin-top: 14px;
+	margin-top: 18px;
 }
 
 .header__menu-list {
@@ -56,7 +54,7 @@
 	font-weight: normal;
 	line-height: 1.42rem;
 	list-style: none outside none;
-	margin: 0;
+	margin: -83px;
 	padding: 0;
 	text-align: left;
 	text-decoration: none;
@@ -92,6 +90,7 @@
 	background-image: url(../img/main_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 650px;
 }
 
 .welcome-content {
@@ -102,7 +101,9 @@
 }
 
 .main-image {
-	margin-right: 55px;
+	margin-right: 13px;
+	margin-left: 137px;
+	margin-top: -10px;
 	position: relative;
 }
 
@@ -115,10 +116,11 @@
 .title__first-line {
 	font-family: gagalin, sans-serif, Arial;
 	font-size: 72px;
+	font-weight: 100;s
 	text-transform: uppercase;
 	color: #f9b43b;
 	display: block;
-	margin-bottom: 38px;
+	margin-bottom: 9px;
 	padding-top: 126px;
 }
 

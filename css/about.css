@@ -3,7 +3,8 @@
   min-width: 1100px;
   background: #f0ebe7;
   background: url(../img/menu_bg.jpg) center center no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 650px; }
 
 .title-block {
   display: -webkit-box;
@@ -21,6 +22,7 @@
 .about-title {
   font-family: gagalin, sans-serif, Arial;
   font-size: 72px;
+  font-weight: 100;
   text-transform: uppercase;
   color: #2f3234;
   display: block;
@@ -52,17 +54,29 @@
   text-align: center; }
   .about-content__title {
     font-family: Lifehack, sans-serif, Arial;
-    font-size: 24px; }
+    font-size: 24px;
+    max-height: 60%; }
   .about-content__text {
     font-family: Ubuntu, sans-serif, Arial;
     font-size: 14px;
     font-weight: 300; }
 
 .about-content__item:not(:last-child) {
-  margin-right: 20px; }
+  margin-right: 20px;
+  width: 60%; }
 
 .about-content__pic {
-  margin-bottom: 27px; }
+  width: 105px;
+  height: 105px;
+  margin-bottom: 12px;
+  display: inline-block;
+  text-align: center; }
+  .about-content__pic--meat {
+    background: url(../icons/meat.svg) no-repeat; }
+  .about-content__pic--hand {
+    background: url(../icons/hand.svg) no-repeat; }
+  .about-content__pic--leaf {
+    background: url(../icons/natural.svg) no-repeat; }
 
 .about-content__title {
-  margin-bottom: 10px; }
+  margin-bottom: 16px; }
