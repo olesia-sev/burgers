@@ -1,0 +1,67 @@
+.map {
+  height: 90vh;
+  min-height: 650px;
+  min-width: 940px;
+  position: relative;
+  background-color: #2f3234;
+  background: url(../img/map_bg.jpg) center center no-repeat;
+  background-size: cover; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background: url(../img/footer_bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 10vh;
+  min-width: 940px; }
+  .footer__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .footer__company-info {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    line-height: 1.5; }
+  .footer__company-address {
+    color: #fff; }
+  .footer__company-tel--number {
+    color: #e45028;
+    font-style: initial;
+    text-decoration: none; }
+    .footer__company-tel--number:before {
+      content: "";
+      background: url(../icons/phone.svg) center center no-repeat;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin-right: 5px; }
+  .footer__socials {
+    width: 50%;
+    text-align: right; }
+
+.social-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  fill: #5B5B5B;
+  width: 20px;
+  height: 20px;
+  cursor: pointer; }
+  .social-icon:hover {
+    fill: #fff; }

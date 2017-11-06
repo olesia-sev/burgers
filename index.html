@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="Ru-ru">
+<html lang="ru-RU">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -9,6 +9,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
+	<script src="./js/svg4everybody.js"></script>
+  <script>
+    svg4everybody();
+  </script>
 </head>
 <body>
 	<div class="wrapper">
@@ -34,8 +38,7 @@
 					</header>
 					<div class="welcome-content">
 						<div class="main-image">
-							<img src="img/burger.png" alt="burger">
-							<img src="icons/drops.svg" alt="drops" class="drops-img">
+							<img src="img/burger_steam.png" alt="бургер">
 						</div>
 						<h1 class="title">
 							<span class="title__first-line">Мы делаем</span>
@@ -156,31 +159,6 @@
 											</div>
 										</div>
 									</li>
-
-									<!-- <li class="team__item">
-										<div class="team__name">Ричард Джеймс</div>
-										<div class="team__about">
-											<img src="" alt="">
-												<h3  class="team__about--title">Оператор</h3>
-												С радостью поможет подобрать идеальный бургер и оформить заказ.
-										</div>
-									</li>
-									<li class="team__item">
-										<div class="team__name">Джейк Финн</div>
-										<div class="team__about">
-											<img src="" alt="">
-												<h3  class="team__about--title">Оператор</h3>
-												С радостью поможет подобрать идеальный бургер и оформить заказ.
-										</div>
-									</li>
-									<li class="team__item">
-										<div class="team__name">Николай Иванов</div>
-										<div class="team__about">
-											<img src="" alt="">
-												<h3  class="team__about--title">Оператор</h3>
-												С радостью поможет подобрать идеальный бургер и оформить заказ.
-										</div>
-									</li> -->
 								</ul>
 							</div>
 						</div>
@@ -190,22 +168,31 @@
 
 			<section class="menu">
 				<div class="container container__menu">
+					<div class="menu__title">
+						<h2 class="section-title section-title_color_white menu-title">Меню</h2>
+					</div>
 					<div class="accordeon accordeon__menu">
 					<ul class="menu__list">
-						<li class="munu__item">Для мясоедов
-							<div class="menu__desc">
-
-							</div>
-						</li>
-						<li class="munu__item">Вгетарианское
+						<li class="menu__item menu__item--active">
+							<a href="#" class="menu__item-elem menu__item-elem--meat menu__item-elem--slide">
+							<span class="menu__item-title">Для мясоедов</span></a>
 							<div class="menu__desc">
 								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
 								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
 							</div>
 						</li>
-						<li class="munu__item">Диетическое
+						<li class="menu__item">
+							<a href="#" class="menu__item-elem menu__item-elem--veg"><span class="menu__item-title">Вегетарианское</span></a>
 							<div class="menu__desc">
-
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+							</div>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="menu__item-elem menu__item-elem--diet"><span class="menu__item-title">Диетическое</span></a>
+							<div class="menu__desc">
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+								Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
 							</div>
 						</li>
 					</ul>
@@ -281,15 +268,118 @@
 				</div>
 				</div>
 			</section>
+
+			<section class="order">
+				<div class="container container__order">
+					<h2 class="section-title section-title_position_center team__title">Закажите доставку</h2>
+
+					<div class="form">
+						<form action="" class="form__elem">
+							<div class="col-left">
+								<div class="form__row first-row">
+								   <label for="" class="form__block">
+								      <div class="form__block-title">Имя</div>
+								      <input class="form__input" type="text">
+								    </label>
+								   
+								    <label for="" class="form__block">
+								      <div class="form__block-title">Телефон</div>
+								      <input class="form__input" type="tel">
+								    </label>
+								 </div>
+
+								 <div class="form__row second-row">
+								   <label for="" class="form__block">
+								      <div class="form__block-title">Адрес</div>
+								      <input class="form__input" type="text">
+								    </label>
+								 </div>
+
+								 <div class="form__row third-row">
+								   <label for="" class="form__block">
+								      <div class="form__block-title">Дом</div>
+								      <input class="form__input" type="text">
+								    </label>
+								   
+								    <label for="" class="form__block">
+								      <div class="form__block-title">Корпус</div>
+								      <input class="form__input" type="text">
+								    </label>
+
+								    <label for="" class="form__block">
+								      <div class="form__block-title">Квартира</div>
+								      <input class="form__input" type="text">
+								    </label>
+
+								    <label for="" class="form__block">
+								      <div class="form__block-title">Этаж</div>
+								      <input class="form__input" type="text">
+								    </label>
+								 </div>
+							</div>
+
+							<div class="col-right">
+								<div class="form__row form__row--comment">
+									<label for="" class="form__block">
+								      <div class="form__block-title">Комментарий</div>
+								      <textarea class="form__input form__input--textarea" name="comment" id="" cols="30" rows="5"></textarea>
+								    </label>
+
+								    <div class="form__buttons">
+								    	<div class="form__row">
+								    		<label for="" class="form__radio">
+								    			<input type="radio" name="payment" class="form__radio-elem">
+								    			<div class="form__radio-fake"></div>
+                      							<div class="form__block-title">Потребуется сдача</div>
+								    		</label>
+								    		<label for="" class="form__radio">
+								    			<input type="radio" name="payment" class="form__radio-elem" checked>
+								    			<div class="form__radio-fake"></div>
+                      							<div class="form__block-title">Оплата по карте</div>
+								    		</label>
+								    	</div>
+
+								    	<div class="form__row">
+								    		<label for="" class="form__radio form__radio--checkbox">
+								    			<input type="checkbox" checked name="callback" class="form__radio-elem">
+								    			<div class="form__radio-fake"></div>
+								    			<div class="form__block-title">Не перезванивать</div>
+								    		</label>
+								    	</div>
+
+								    	<div class="form__row">
+								    		<input class="form__order-button" name="" type="submit" value="Заказать">
+								    		<input class="form__order-button form__order-button--reset" name="" type="reset" value="Очистить">
+								    	</div>
+								    </div>
+								</div>
+							</div>
+						</form>
+					</div>
+
+				</div>
+			</section>
 			
 			<div class="map">
 				<footer class="footer">
 					<div class="footer__content">
 						<div class="footer__company-info">
-							
+							<span class="footer__company-address">Санкт-Петербург, ул. Бабушкина, д.12/1, 15</span>
+							<address class="footer__company-tel"><a href="tel:+78123771377" class="footer__company-tel--number">+7 (812) 377-13-77</a></address>
 						</div>
 						<div class="footer__socials">
-							<img src="" alt="vk">
+							<a href="#"><svg class="social-icon">
+								<use xlink:href=icons/sprite/sprite.svg#vk />
+							</svg></a>
+							<a href="#"><svg class="social-icon">
+								<use xlink:href=icons/sprite/sprite.svg#fb />
+							</svg></a>
+							<a href="#"><svg class="social-icon">
+								<use xlink:href=icons/sprite/sprite.svg#inst />
+							</svg></a>
+							<a href="#"><svg class="social-icon">
+								<use xlink:href=icons/sprite/sprite.svg#tw />
+							</svg></a>
 						</div>
 					</div>
 				</footer>
