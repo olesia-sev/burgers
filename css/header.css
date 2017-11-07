@@ -148,3 +148,29 @@
   font-family: lifehack, sans-serif, Arial;
   font-size: 65px;
   color: #fff; }
+
+.next-page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.next-page__button {
+  background: none;
+  border: 0;
+  outline: transparent; }
+
+.next-page__arrow {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  -o-transition: .4s;
+  transition: .4s; }
+  .next-page__arrow:hover {
+    fill: #e45028; }

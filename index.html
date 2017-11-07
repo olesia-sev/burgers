@@ -46,7 +46,11 @@
 						</h1>
 					</div>
 					<div class="next-page">
-						<button class="next-page-button"></button>
+						<button class="next-page__button">
+							<svg class="next-page__arrow">
+								<use xlink:href=icons/sprite/sprite.svg#arrow-scroll />
+							</svg>
+						</button>
 					</div>					
 				</div>
 			</section>
@@ -327,12 +331,12 @@
 
 								    <div class="form__buttons">
 								    	<div class="form__row">
-								    		<label for="" class="form__radio">
+								    		<label class="form__radio">
 								    			<input type="radio" name="payment" class="form__radio-elem">
 								    			<div class="form__radio-fake"></div>
                       							<div class="form__block-title">Потребуется сдача</div>
 								    		</label>
-								    		<label for="" class="form__radio">
+								    		<label class="form__radio">
 								    			<input type="radio" name="payment" class="form__radio-elem" checked>
 								    			<div class="form__radio-fake"></div>
                       							<div class="form__block-title">Оплата по карте</div>
@@ -340,8 +344,8 @@
 								    	</div>
 
 								    	<div class="form__row">
-								    		<label for="" class="form__radio form__radio--checkbox">
-								    			<input type="checkbox" checked name="callback" class="form__radio-elem">
+								    		<label class="form__radio form__radio--checkbox">
+								    			<input type="checkbox" checked name="callback" class="form__radio-elem form__radio-elem--checkbox">
 								    			<div class="form__radio-fake"></div>
 								    			<div class="form__block-title">Не перезванивать</div>
 								    		</label>

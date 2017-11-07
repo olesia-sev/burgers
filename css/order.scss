@@ -8,6 +8,15 @@ $red: #e35028;
   	background-color: #1b1f20;
  	position: relative;
  	color: #fff;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+}
+
+.container__order {
+	height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .form__elem {
@@ -19,7 +28,6 @@ $red: #e35028;
 	color: #fff;
 	font-size: 14px;
 	font-weight: 200;
-	margin-bottom: 10px;
 	margin-left: 10px;
 }
 
@@ -114,23 +122,16 @@ $red: #e35028;
 	}
 }
 
-.form__radio--checkbox:checked {
+.form__radio-elem--checkbox:checked {
+	&+.form__radio-fake {
+		&:after {
 			background: url(../img/check.png) no-repeat;
 			background-size: contain;
 			width: 11px;
 			height: 9px;
+		}
+	}
 }
-
-// .form__radio--checkbox:checked {
-// 	&+.form__radio-fake {
-// 		&:after {
-// 			background: url(../img/check.png) no-repeat;
-// 			background-size: contain;
-// 			width: 11px;
-// 			height: 9px;
-// 		}
-// 	}
-// }
 
 .form__order-button {
 	background: $red;

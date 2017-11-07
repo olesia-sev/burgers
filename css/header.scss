@@ -142,3 +142,26 @@
 	font-size: 65px;
 	color: #fff;
 }
+
+.next-page {
+	display: flex;
+	justify-content: center;
+}
+
+.next-page__button {
+	background: none;
+	border: 0;
+	outline: transparent;
+}
+
+.next-page__arrow {
+	fill: #fff;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transition: .4s;
+
+	&:hover {
+		fill: #e45028;
+	}
+}
