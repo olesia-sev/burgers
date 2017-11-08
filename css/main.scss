@@ -4,10 +4,15 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
 
-// setups
-// @import "_misc/mixins";
-// @import "_misc/fonts";
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+
 @import url(./base.css);
+@import url(./media.css);
 
 //blocks
 @import url(./header.css);

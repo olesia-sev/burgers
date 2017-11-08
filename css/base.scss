@@ -13,11 +13,21 @@
   font-weight: normal;
   font-style: normal; }
 
+
+
 body, html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding-left: 0;
+
+  @include tablets {
+      font-size: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(13px);
+  }
 }
 
 body {
