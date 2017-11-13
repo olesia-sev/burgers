@@ -1,8 +1,12 @@
+@function rem($px) {
+	@return $px / 16px + 0rem;
+  }
+
 .team {
 	background: url(../img/team.jpg) no-repeat;
 	background-size: cover;
 	height: 100vh;
-	min-height: 650px;
+	min-height: rem(650px);
 	background-color:#1b1f20;
 	position: relative;
 }
@@ -12,7 +16,7 @@
 }
 
 .team__title {
-	padding-top: 86px;
+	padding-top: rem(86px);
 }
 
 .container__team {
@@ -40,11 +44,11 @@
 	&__name {
 	text-decoration: none;
 	font-family: gagalin, sans-serif, Arial;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #fff;
 	cursor: pointer;
 	text-transform: uppercase;
-	padding-bottom: 20px;
+	padding-bottom: rem(20px);
 	transition: .4s;
 	}
 
@@ -67,10 +71,10 @@
 	content: "";
     height: 0;
     width: 0;
-    border: 9px solid transparent;
+    border: rem(9px) solid transparent;
     border-top-color: #f9b43b;
-    border-bottom-width: 0px;
-    margin-right: 10px;
+    border-bottom-width: rem(0px);
+    margin-right: rem(10px);
 	}
 }
 
@@ -79,11 +83,11 @@
 	align-items: center;
 	overflow: hidden;
 	font-family: ubuntu, sans-serif, Arial;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 300;
 	color: #fff;
 	line-height: 1.5;
-    width: 380px;
+    width: rem(380px);
 }
 
 .team__about {
@@ -104,12 +108,12 @@
 }
 
 .team-list__pic {
-	padding-right: 20px;
+	padding-right: rem(20px);
 }
 
 .team-list__img {
 	object-fit: cover;
-	height: 90px;
-	width: 90px;
+	height: rem(90px);
+	width: rem(90px);
 	border-radius: 50%;
 }

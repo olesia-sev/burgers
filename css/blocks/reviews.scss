@@ -1,13 +1,17 @@
+@function rem($px) {
+	@return $px / 16px + 0rem;
+  }
+  
 .reviews {
 	height: 100vh;
-    min-width: 1100px;
+    min-width: rem(1100px);
     background-color: #1b1f20;
     background-size: cover;
-    min-height: 650px;
+    min-height: rem(650px);
 }
 
 .reviews__section {
-	// max-width: 1100px;
+	// max-width: rem(1100px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -20,7 +24,7 @@
 .reviews__item {
 	position: absolute;
     opacity: 0;
-    left: -9999px;
+    left: rem(-9999px);
     transition: opacity .6s;
     background: rgba(0,0,0,.7);
     width: 100%;
@@ -32,7 +36,7 @@
 
 .reviews__name {
 	font-family: gagalin, sans-serif, Arial;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #fff;
 }
 
@@ -44,8 +48,8 @@
 }
 
 .reviews__photo {
-	// max-width: 276px;
-	// height: 325px;
+	// max-width: rem(276px);
+	// height: rem(325px);
 	height: 50vh;
 	overflow: hidden;
     // display: inline-flex;
@@ -62,19 +66,19 @@
 }
 
 .reviews__name {
-	padding: 48px 22px 0;
+	padding: rem(48px) rem(22px) 0;
 }
 
 .reviews__text {
 	// display: block;
 	// width: 25%;
-	// min-height: 325px;
+	// min-height: rem(325px);
 	// overflow: hidden;
 	color: #fff;
 	font-family: Ubuntu, sans-serif, Arial;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 300;	
-	margin: 22px 22px 16px;
+	margin: rem(22px) rem(22px) rem(16px);
 }
 
 .button__more {
@@ -84,7 +88,7 @@
 	border-spacing: 0;
 	color: #26589F;
 	font-family: 'PT Sans Narrow',sans-serif;
-	font-size: 16px;
+	font-size: rem(16px);
 	font-weight: normal;
 	line-height: 1.42rem;
 	list-style: none outside none;
@@ -98,16 +102,16 @@
 	background: #2f3234;
 	font-family: Ubuntu;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: rem(13px);
 	color: #fff;
 	cursor: pointer;
 	text-align: center;
-	//width: 111px;
-	height: 35px; 
+	//width: rem(111px);
+	height: rem(35px); 
 	margin-top: 0;
-	margin-left: 22px;
-	border-radius: 5px;
-	padding: 7px 15px;
+	margin-left: rem(22px);
+	border-radius: rem(5px);
+	padding: rem(7px) rem(15px);
 	box-sizing: border-box;
 	text-transform: uppercase;
 	transition: .5s;

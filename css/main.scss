@@ -1,28 +1,29 @@
-//colors
-$orange: #e45028;
-$yellow: #f9b43b;
-$black: #2f3234;
-$red: #e35028;
-
 // resolutions
 $desktop: 1200px;
 $laptop: 992px;
 $tablets: 768px;
 $phones: 480px;
 
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
 
-@import url(./base.css);
-@import url(./media.css);
+//setups
+@import '_misc/mixins';
+@import '_misc/layout';
+@import '_misc/fonts';
 
 //blocks
-@import url(./header.css);
-@import url(./about.css);
-@import url(./reviews.css);
-@import url(./team.css);
-@import url(./menu.css);
-@import url(./order.css);
-@import url(./map.css);
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/reviews';
+@import 'blocks/team';
+@import 'blocks/menu';
+@import 'blocks/order';
+@import 'blocks/map';
 
 //common
-@import url(./navigation.css);
+@import 'blocks/navigation';
 

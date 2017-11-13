@@ -1,7 +1,11 @@
+@function rem($px) {
+	@return $px / 16px + 0rem;
+  }
+  
 .map {
 	height: 90vh;
-	min-height: 650px;
-	min-width: 940px;
+	min-height: rem(650px);
+	min-width: rem(940px);
 	position: relative;
 	background-color: #2f3234;
 	background: url(../img/map_bg.jpg) center center no-repeat;
@@ -14,7 +18,7 @@
 	background: url(../img/footer_bg.jpg) center center no-repeat;
 	background-size: cover;
 	height: 10vh;
-	min-width: 940px;
+	min-width: rem(940px);
 
 	&__content {
 	display: flex;
@@ -42,10 +46,10 @@
 		&:before {
 			content: "";
 			background: url(../icons/phone.svg) center center no-repeat;
-			width: 10px;
-			height: 10px;
+			width: rem(10px);
+			height: rem(10px);
 			display: inline-block;
-			margin-right: 5px;
+			margin-right: rem(5px);
 		}
 	}
 
@@ -58,10 +62,10 @@
 .social-icon {
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 10px;
+	margin-left: rem(10px);
 	fill: #5B5B5B;
-	width: 20px;
-	height: 20px; 
+	width: rem(20px);
+	height: rem(20px); 
 	cursor: pointer;
 	
 	&:hover {

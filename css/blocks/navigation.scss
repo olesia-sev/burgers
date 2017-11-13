@@ -4,36 +4,39 @@
 
 .navigation {
    position: fixed;
-   min-width: 40px;
+   min-width: rem(40px);
    box-sizing: border-box;
-   margin-right: 10px;
+   margin-right: rem(10px);
+   top: 30%;
 
    &__list {
-      list-style-type: none;
+    color: #fff; 
+    list-style-type: none;
    // background-color: rgba(0,0,0,.3);
-   display: block;
-   margin: 0;
-   padding: 6px 9px;
-   border-radius: 20px;
+    display: block;
+    margin: 0;
+    padding: rem(6px) rem(9px);
+    border-radius: rem(20px);
    }
 
    &__item {
       display: list-item;
+      cursor: pointer;      
    }
 
    &__circle {
-   width: 6px;
-   height: 6px;
+   width: rem(6px);
+   height: rem(6px);
    background-color: #fff;
    display: block;
-   border-radius: 3px;
+   border-radius: rem(3px);
    }
 
    &__link {
-   margin: 5px 0;
-   width: 24px;
-   height: 24px;
-   border: 2px solid rgba(0,0,0,0);
+   margin: rem(5px) 0;
+   width: rem(24px);
+   height: rem(24px);
+   border: rem(2px) solid rgba(0,0,0,0);
    display: block;
    border-radius: 50%;
    display: flex;
@@ -45,10 +48,10 @@
 }
 
 .navigation__link--active {
-   border: 2px solid #fff;
+   border: rem(2px) solid #fff;
 } 
 
 .navigation__item:hover .navigation__link {
    transform: scale(.8);
-   border: 2px solid rgba(255,255,255,1);  
+   border: rem(2px) solid rgba(255,255,255,1);  
 }
