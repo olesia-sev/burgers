@@ -1,0 +1,71 @@
+.burgers {
+  background: linear-gradient(#f9b43b, #ec8f39, #f9b43b);
+  background-size: cover;
+
+  &__description--price {
+    @extend .section-title;
+    color: $red;
+    font-size: 30px;
+  }
+  
+  &__description--price-number {
+    font-size: 70px;
+  }
+
+  &__description--text {
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: 2;
+  }
+}
+
+.container__burgers {
+  height: 100vh;
+	min-height: rem(650px);
+ 	position: relative;
+ 	color: #fff;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+  flex-direction: row;
+}
+
+
+
+.burgers__title {
+  @extend .section-title;
+  color: #fff;
+  line-height: 1;
+}
+
+.burgers__order-button {
+  @extend .header__button;
+  padding: rem(9px) rem(15px);
+}
+
+.button__arrow {
+	background: none;
+	border: 0;
+  outline: transparent;
+  
+  &--right-svg,
+  &--left-svg {
+    fill: #fff;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: .4s;
+  
+    &:hover {
+      fill: #e45028;
+    }
+  }
+
+  &--right-svg {
+    transform: rotate(-90deg);
+  }
+
+  &--left-svg {
+    transform: rotate(90deg);
+  }
+}

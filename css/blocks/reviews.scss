@@ -18,7 +18,12 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    height: 100vh;
+	height: 100vh;
+	
+	@include tablets {
+		width: 100vw;
+		margin: 0;
+	}
  }
 
 .reviews__item {
@@ -31,13 +36,26 @@
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;    
+	left: 0;    
+	
+	@include tablets {
+		text-align: center;
+	}
 }
 
 .reviews__name {
 	font-family: gagalin, sans-serif, Arial;
 	font-size: rem(14px);
 	color: #fff;
+	padding: rem(48px) rem(22px) 0;
+	
+		@include tablets {
+		//padding: rem(16px) rem(22px) 0;
+		}	
+
+		@include phones {
+			font-size: 22px;
+		}
 }
 
 .reviews__photo:hover .reviews__item {
@@ -56,17 +74,22 @@
     align-items: center;
     filter: grayscale(100%);
     width: 25%;
-    position: relative;
+	position: relative;
+	
+	@include tablets {
+		height: 25vh;
+		width: 50%;
+	}
 }
 
 .reviews__photo--avatar {
 	height: 50vh;
 	width: 100%;
 	object-fit: cover;
-}
 
-.reviews__name {
-	padding: rem(48px) rem(22px) 0;
+	@include tablets {
+		height: 25vh;
+	}
 }
 
 .reviews__text {
@@ -79,6 +102,12 @@
 	font-size: rem(14px);
 	font-weight: 300;	
 	margin: rem(22px) rem(22px) rem(16px);
+
+	@include phones {
+		// height: 0;
+		// visibility: hidden;
+		display: none;
+	}
 }
 
 .button__more {
@@ -115,6 +144,11 @@
 	box-sizing: border-box;
 	text-transform: uppercase;
 	transition: .5s;
+
+	@include phones {
+		margin-top: 15px;
+		margin-left: 0;
+	}
 }
 
 .button__more:hover {

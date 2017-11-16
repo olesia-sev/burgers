@@ -1,11 +1,3 @@
-@function rem($px) {
-	@return $px / 16px + 0rem;
-  }
-  
-.container__welcome {
-	flex: 1;
-}
-
 .header {
 	display: flex;
 	align-items: center;
@@ -20,6 +12,10 @@
 .header__menu {
 	display: flex;
 	margin-left: auto;
+
+	@include tablets {
+		visibility: hidden;
+		}
 }
 
 .header__menu-list {
@@ -85,7 +81,7 @@
 	/*my styles*/
 	background: #e45028;
 	font-family: Ubuntu;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: rem(13px);
 	color: #fff;
 	cursor: pointer;
@@ -104,20 +100,49 @@
 
 .welcome-page {
 	height: 100vh;
-	min-width: rem(1100px);
+	//min-width: rem(1100px);
 	background-color: #1b1f20;
 	background: url(../img/main_bg.jpg) center center no-repeat;
 	background-size: cover;
 	min-height: rem(650px);
+	position: relative;
+}
+
+.container__welcome {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 15%;
 }
 
 .welcome-content {
 	display: flex;
 	align-items: center;
+
+	@include tablets {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .main-image {
 	width: 50%;
+
+	@include phones {
+		width: 80%;
+	}
+}
+
+.main-burger {
+	@include tablets {
+		width: 400px;
+	}
+
+	@include phones {
+		width: 100%;
+	}
 }
 
 .drops-img {
@@ -128,6 +153,10 @@
 
 .title {
 	width: 50%;
+
+	@include phones {
+		width: 80%;
+	}
 }
 
 .title__first-line {
@@ -139,17 +168,45 @@
 	display: block;
 	margin-bottom: 9px;
 	padding-top: 126px;
+
+	@include tablets {
+		padding-bottom: 0;
+		padding-top: 0;
+		font-size: rem(66px);
+	}
+
+	@include phones {
+		white-space: nowrap;
+		font-size: rem(60px);	
+	}
 }
 
 .title__second-line {
 	font-family: lifehack, sans-serif, Arial;
 	font-size: 65px;
 	color: #fff;
+
+	@include tablets {
+		font-size: rem(62px);
+		line-height: 1;
+	}
+
+	@include phones {
+		font-size: rem(52px);
+		line-height: 1;
+	}
 }
 
 .next-page {
-	display: flex;
-	justify-content: center;
+	// display: flex;
+	// justify-content: center;
+	position: relative;
+	bottom: 12%;
+	left: 50%;
+
+	@include phones {
+		left: 40%;
+	}
 }
 
 .next-page__button {

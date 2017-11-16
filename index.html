@@ -38,21 +38,22 @@
 					</header>
 					<div class="welcome-content">
 						<div class="main-image">
-							<img src="img/burger_steam.png" alt="бургер">
+							<img src="img/burger_steam.png" alt="бургер" class="main-burger">
 						</div>
 						<h1 class="title">
 							<span class="title__first-line">Мы делаем</span>
 							<span class="title__second-line">натуральные бургеры</span>
 						</h1>
 					</div>
-					<div class="next-page">
+									
+				</div>
+				<div class="next-page">
 						<button class="next-page__button">
 							<svg class="next-page__arrow">
 								<use xlink:href=icons/sprite/sprite.svg#arrow-scroll />
 							</svg>
 						</button>
-					</div>					
-				</div>
+					</div>	
 			</section>
 		
 			<section class="about">
@@ -110,7 +111,42 @@
 				</div>
 			</section>
 
+			<section class="burgers">
+				<div class="container container__burgers">
+						<div class="burgers__button">	
+								<button class="button__arrow button__arrow--left">
+										<svg class="button__arrow--left-svg">
+											<use xlink:href=icons/sprite/sprite.svg#arrow-scroll />
+										</svg>
+									</button>
+						</div>
+					<div class="burgers__image">
+						<img src="img/dark_burger.png" alt="черный бургер" class="burgers__pic">
+					</div>
+					<div class="burgers__info">
+						<h2 class="burgers__title">Dark beef burger</h2>
+						<div class="burgers__description">
+							<p class="burgers__description--text">
+									Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.
+							</p>
+							<span class="burgers__description--price">
+								<span class="burgers__description--price-number">500</span>рублей
+							</span>
+							<a href="#" class="burgers__order-button">Заказать</a>
+						</div>
+					</div>
+					<div class="burgers__button">	
+							<button class="button__arrow button__arrow--right">
+									<svg class="button__arrow--right-svg">
+										<use xlink:href=icons/sprite/sprite.svg#arrow-scroll />
+									</svg>
+								</button>
+					</div>
+				</div>
+			</section>
+
 			<section class="team">
+				<div class="team__overlay"></div>
 				<div class="container container__team">
 						<div class="team__info">
 								<h2 class="section-title section-title_position_center team__title">Команда</h2>

@@ -1,9 +1,3 @@
-@function rem($px) {
-	@return $px / 16px + 0rem;
-  }
-  
-@import url(./main.css);
-
 .container__menu {
 	flex-direction: row;
 	width: 100%;
@@ -71,8 +65,11 @@
 		
 		overflow: hidden;
 		background: rgba(#2f3234, .9);
-		padding: rem(61px) rem(35px);
-    	line-height: 2;
+		//padding: rem(61px) rem(35px);
+		line-height: 2;
+		width: 0;
+		padding: 0;
+		display: none;
 	}
 }
 
