@@ -12,9 +12,9 @@ html {
 
 body, html {
   height: 100%;
-  // width: 100%;
-  // margin: 0;
-  // padding-left: 0;
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
@@ -60,6 +60,7 @@ table {
 ul {
   padding: 0;
   margin: 0;
+  list-style: none;
   li {
     list-style: none;
   }

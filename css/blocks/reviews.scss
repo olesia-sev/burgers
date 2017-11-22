@@ -1,7 +1,3 @@
-@function rem($px) {
-	@return $px / 16px + 0rem;
-  }
-  
 .reviews {
 	height: 100vh;
     min-width: rem(1100px);
@@ -50,7 +46,7 @@
 	padding: rem(48px) rem(22px) 0;
 	
 		@include tablets {
-		//padding: rem(16px) rem(22px) 0;
+			padding: rem(5px) rem(10px) 0;
 		}	
 
 		@include phones {
@@ -153,4 +149,41 @@
 
 .button__more:hover {
 	background-color: #1f2122;
+}
+
+//popup
+.full-review {
+	position: relative;
+	padding: 20px;
+	width: 460px;
+	border-radius: 5px;
+}
+
+.full-review__title {
+	font-size: 14px;
+	font-family: gagalin, Arial, sans-serif;
+	font-weight: 500;
+	color: $black;
+	text-transform: uppercase;
+	margin-bottom: rem(20px);
+}
+
+.full-review__content {
+	font-size: 14px;
+	font: gaglin, Arial, sans-serif;
+	font-weight: 300;
+	color: $black;
+}
+
+.fancybox-close-small:after {
+	color: #f2a996;
+
+	&:hover {
+		color: #f2a996;
+		background-color: transparent;
+	}
+	&:focus {
+		color: #f2a996;
+		background-color: transparent;
+	}
 }

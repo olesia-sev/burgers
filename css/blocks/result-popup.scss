@@ -1,0 +1,39 @@
+.popup {
+  display: none;
+}
+
+.result__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result__message {
+  font-family: ubuntu, Arial, sans-serif;
+  font-size: rem(14px);
+  font-weight: 300;
+  color: $black;
+  margin-bottom: 15px;
+}
+
+.result__close-button {
+  position: relative;
+  background-color: #e45028;
+	font-family: Ubuntu;
+	font-weight: 500;
+	font-size: rem(13px);
+	color: #fff;
+	cursor: pointer;
+	text-align: center;
+	border-radius: rem(5px);
+	padding: rem(10px) rem(16px);
+	box-sizing: border-box;
+	text-transform: uppercase;
+  transition: .5s;
+  text-decoration: none;
+
+    &:hover {
+      background-color: #C1401e;
+    }
+}

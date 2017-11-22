@@ -8,6 +8,7 @@
    box-sizing: border-box;
    margin-right: rem(10px);
    top: 30%;
+   right: 0;
 
    &__list {
     color: #fff; 
@@ -44,6 +45,14 @@
    justify-content: center;
    transition: all .5s cubic-bezier(.215,.61,.355,1) 0s;
    transform: scale(1);
+   }
+
+   @include phones {
+       display: none;
+   }
+
+   @include tablets {
+       display: none;
    }
 }
 

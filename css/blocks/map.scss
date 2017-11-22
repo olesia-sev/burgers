@@ -82,6 +82,7 @@
 	width: rem(20px);
 	height: rem(20px); 
 	cursor: pointer;
+	transition: .4s;
 	
 	&:hover {
 	fill: #fff;

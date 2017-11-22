@@ -5,7 +5,7 @@ $tablets: 768px;
 $phones: 480px;
 
 //colors
-$orange: #e45028;
+$orange: #f08c33;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
@@ -24,6 +24,8 @@ $red: #e35028;
 @import 'blocks/menu';
 @import 'blocks/order';
 @import 'blocks/map';
+@import 'blocks/burger-menu';
+@import 'blocks/result-popup';
 
 //common
 @import 'blocks/navigation';
