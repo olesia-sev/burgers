@@ -1,66 +1,79 @@
-.navigation, .navigation * {
+.onepage-pagination,
+.onepage-pagination * {
     box-sizing: border-box;
 }
 
-.navigation {
-   position: fixed;
-   min-width: rem(40px);
-   box-sizing: border-box;
-   margin-right: rem(10px);
-   top: 30%;
-   right: 0;
-
-   &__list {
-    color: #fff; 
+.onepage-pagination {
+    z-index: 5;
+    list-style: none;
+    position: fixed;
+    min-width: rem(40px);
+    box-sizing: border-box;
+    margin-right: rem(10px);
+    top: 30%;
+    right: 0;
+    color: #fff;
     list-style-type: none;
-   // background-color: rgba(0,0,0,.3);
     display: block;
     margin: 0;
     padding: rem(6px) rem(9px);
     border-radius: rem(20px);
-   }
 
-   &__item {
-      display: list-item;
-      cursor: pointer;      
-   }
+    li {
+        padding: 0;
+        text-align: center;
+        display: list-item;
+        cursor: pointer;
 
-   &__circle {
-   width: rem(6px);
-   height: rem(6px);
-   background-color: #fff;
-   display: block;
-   border-radius: rem(3px);
-   }
+        &:hover a {
+            transform: scale(.8);
+            border: rem(2px) solid rgba(255, 255, 255, 1);
+        }
 
-   &__link {
-   margin: rem(5px) 0;
-   width: rem(24px);
-   height: rem(24px);
-   border: rem(2px) solid rgba(0,0,0,0);
-   display: block;
-   border-radius: 50%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: all .5s cubic-bezier(.215,.61,.355,1) 0s;
-   transform: scale(1);
-   }
+        a {
+            padding: 0;
+            margin: rem(5px) 0;
+            width: rem(24px);
+            height: rem(24px);
+            border: rem(2px) solid rgba(0, 0, 0, 0);
+            display: block;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s cubic-bezier(.215, .61, .355, 1) 0s;
+            transform: scale(1);
 
-   @include phones {
-       display: none;
-   }
+            &:before {
+                content: '';
+                position: absolute;
+                width: rem(6px);
+                height: rem(6px);
+                background: #fff;
+                display: block;
+                border-radius: rem(3px);
+            }
 
-   @include tablets {
-       display: none;
-   }
-}
+            &.active {
+                border: rem(2px) solid #fff;
+            }
 
-.navigation__link--active {
-   border: rem(2px) solid #fff;
-} 
+            &.active:before {
+                width: rem(6px);
+                height: rem(6px);
+                background: #fff;
+                border: none;
+                margin-top: auto;
+                left: auto;
+            }
+        }
+    }
 
-.navigation__item:hover .navigation__link {
-   transform: scale(.8);
-   border: rem(2px) solid rgba(255,255,255,1);  
+    @include phones {
+        display: none;
+    }
+
+    @include tablets {
+        display: none;
+    }
 }

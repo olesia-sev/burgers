@@ -1,115 +1,98 @@
 .about {
-	height: 100vh;
+    height: 100vh;
     background: #f0ebe7;
-	background: url(../img/menu_bg.jpg) center center no-repeat;
-	background-size: cover;
-	min-height: rem(650px);
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    background: url(../img/menu_bg.jpg) center center no-repeat;
+    background-size: cover;
+    min-height: rem(650px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container__about {
-//	height: 100vh;
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .title-block {
-	display: flex;
-	width: rem(940px);
-	margin: 0 auto;
-	justify-content: center;
-	margin-bottom: rem(22px);
-	margin-top: rem(-115px);
-
-	@include tablets {
-		margin: 0 rem(100px);
-		
-	}
-}
-
-.about-title {
-//	padding-top: rem(86px);
+    display: flex;
+    width: rem(940px);
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: rem(22px);
+    margin-top: rem(-115px);
+    @include tablets {
+        margin: 0 rem(100px);
+    }
 }
 
 .about__list {
-	display: flex;
-
-	@include phones {
-		flex-direction: column;
-	}
+    display: flex;
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .about__content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .about__content {
-	color: #2f3234;
-	text-align: center;
-	
-	&-title {
-		font-family: Lifehack, sans-serif, Arial;
-		font-size: rem(24px);
-		max-height: 60%;
-	}
-
-	&-text {
-		font-family: Ubuntu, sans-serif, Arial;
-		font-size: rem(14px);
-		font-weight: 300;
-	}
+    color: #2f3234;
+    text-align: center;
+    &-title {
+        font-family: Lifehack, sans-serif, Arial;
+        font-size: rem(24px);
+        max-height: 60%;
+    }
+    &-text {
+        font-family: Ubuntu, sans-serif, Arial;
+        font-size: rem(14px);
+        font-weight: 300;
+    }
 }
 
 .about__item {
-	align-items: center;
+    align-items: center;
     display: flex;
-	flex-direction: column;
-	
-	@include tablets {
-		width: 33%;
-	}
-
-	@include phones {
-		width: 100%;
-		flex-direction: row;
-	}
+    flex-direction: column;
+    @include tablets {
+        width: 33%;
+    }
+    @include phones {
+        width: 100%;
+        flex-direction: row;
+    }
 }
 
 .about__item:not(:last-child) {
-	margin-right: rem(20px);
-	//width: 60%;
+    margin-right: rem(20px);
 }
 
 .about-content__pic {
-	width: rem(105px);
-	height: rem(105px);
-	margin-bottom: rem(12px);
-	display: inline-block;
-	text-align: center;
-
-	@include phones {
-		width: 100%;
-	}
-	
-	&--meat {
-		background: url(../icons/meat.svg) no-repeat;
-	}
-
-	&--hand {
-		background: url(../icons/hand.svg) no-repeat;
-	}
-
-	&--leaf {
-		background: url(../icons/natural.svg) no-repeat;
-	}
+    width: rem(105px);
+    height: rem(105px);
+    margin-bottom: rem(12px);
+    display: inline-block;
+    text-align: center;
+    @include phones {
+        width: 100%;
+    }
+    &--meat {
+        background: url(../icons/meat.svg) no-repeat;
+    }
+    &--hand {
+        background: url(../icons/hand.svg) no-repeat;
+    }
+    &--leaf {
+        background: url(../icons/natural.svg) no-repeat;
+    }
 }
 
 .about__content-title {
-	margin-bottom: rem(16px);
+    margin-bottom: rem(16px);
 }

@@ -1,150 +1,144 @@
 .burger-icon {
-  display: none;
-
-  @include tablets {
-    display: block;
-    height: 20px;
-    width: 25px;
-    position: relative;
-    z-index: 15;
-    margin-left: 20px;
-    cursor: pointer;
-  }
+    display: none;
+    @include tablets {
+        display: block;
+        height: 20px;
+        width: 25px;
+        position: relative;
+        z-index: 15;
+        margin-left: 20px;
+        cursor: pointer;
+    }
 }
 
 .burger-icon__line-1,
 .burger-icon__line-2,
-.burger-icon__line-3, {
-  position: absolute;
-  width: 24px;
-  height: 4px;
-  background-color: white;
-  margin-bottom: 10px;
-  border-radius: 3px;
-  box-shadow: 1px 2px 9px 0px rgba(0,0,0,0.6);
-  box-sizing: border-box;
+.burger-icon__line-3,
+{
+    position: absolute;
+    width: 24px;
+    height: 4px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 9px 0px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
 }
 
 .burger-icon__line-2 {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 .burger-icon__line-3 {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 .menu-on .burger-icon__line-1 {
-  transform: rotate(45deg);
-  margin-top: 8px;
-  z-index: 2;
+    transform: rotate(45deg);
+    margin-top: 8px;
+    z-index: 2;
 }
 
 .menu-on .burger-icon__line-3 {
-  transform: rotate(-45deg);
-  margin-top: 8px;
-  z-index: 2;
+    transform: rotate(-45deg);
+    margin-top: 8px;
+    z-index: 2;
 }
 
 .menu-on .burger-icon__line-2 {
-  transform: scale(0);
-  opacity: 0;
-  z-index: 2;
+    transform: scale(0);
+    opacity: 0;
+    z-index: 2;
 }
 
 .burger-menu {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba($black, .9);
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  z-index: 3;
-  opacity: 0;
-  transition: opacity .3s;
-  visibility: hidden;
-
-  &__visible {
-    opacity: 1;
-    visibility: initial;
-  }
-
-  &__logo {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
-  &__items {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($black, .9);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity .3s;
+    visibility: hidden;
+    &__visible {
+        opacity: 1;
+        visibility: initial;
+    }
+    &__logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    &__items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 .nav__burger {
-  display: block;
+    display: block;
 }
 
 .burger-menu__list {
-  width: 100%;
-
-  &::before {
-    content: "";
-    display: table;
-  }
+    width: 100%;
+    &::before {
+        content: "";
+        display: table;
+    }
 }
 
-.burger-meu__item {
-  vertical-align: middle;
-  display: flex;
-  flex-direction: column;
-
-  &::after {
-    content: "";
-    display: block;
-    width: rem(4px);
-    height: rem(4px);
-    background: #fff;
-    border-radius: 50%;
-    display: inline-block;
+.burger-menu__item {
     vertical-align: middle;
-    margin: .9375rem auto;
-  }
+    display: flex;
+    flex-direction: column;
+    &::after {
+        content: "";
+        display: block;
+        width: rem(4px);
+        height: rem(4px);
+        background: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        margin: .9375rem auto;
+    }
 }
 
-.burger-meu__item:last-child::after {
-  display: none;
+.burger-menu__item:last-child::after {
+    display: none;
 }
 
 .burger-menu__link {
-  color: #fff;
-  font-size: rem(16px);
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:active {
-    text-decoration: underline;
-  }
+    color: #fff;
+    font-size: rem(16px);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:active {
+        text-decoration: underline;
+    }
 }
 
 .burger-menu__close {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
 }
 
 .burger-menu__close-icon {
-  width: 100%;
-  height: 100%;
-  fill: #fff;
+    width: 100%;
+    height: 100%;
+    fill: #fff;
 }

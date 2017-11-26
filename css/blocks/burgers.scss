@@ -1,298 +1,270 @@
 .burgers {
-  background: linear-gradient(#f9b43b, #ec8f39, #f9b43b);
-  background-size: cover;
-
-  &__content {
-    display: flex;
-    position: relative;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-
-    @include tablets {
-      flex-direction: column;
-      padding-top: 15%;
-      width: 90%;
-    }
-  }
-
-  &__info {
-    position: relative;
-    height: 80%;
-    display: flex;
-    //flex-direction: column;
-
-    @include tablets {
-      text-align: center;
-    }
-  }
-
-  &__desc {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-  }
-
-  &__image {
-    position: relative;
-    display: flex;
-    height: 80%;
-
-    @include tablets {
-      justify-content: center;
-    }
-  }
-
-  &__main-pic {
-    align-self: center;
-
-    @include tablets {
-      padding-top: 88px;
-    }
-
-    @include phones {
-      width: 100%;
-    }
-  }
-
-  &__pic {
-    @include phones {
-      width: 100%;
-    }
-  }
-
-  &__description--price {
-    @extend .section-title;
-    color: $red;
-    font-size: 30px;
-    margin: 0;
-
-    @include phones {
-      font-size: rem(26px);
-    }
-  }
-
-  &__description--price-btn {
-      display: flex;
-      align-items: baseline;
-
-      @include tablets {
+    background: linear-gradient(#f9b43b, #ec8f39, #f9b43b);
+    background-size: cover;
+    &__content {
+        display: flex;
+        position: relative;
+        width: 100%;
         justify-content: center;
-      }
-
-      @include phones {
-        font-size: rem(24px);
-        font-weight: 500;
-        margin-top: rem(20px);
-      }
-  }
-  
-  &__description--price-number {
-    font-size: rem(70px);
-
-    @include phones {
-      font-size: rem(50px);
-      font-weight: 500;
+        align-items: center;
+        @include tablets {
+            flex-direction: column;
+            padding-top: 15%;
+            width: 100%;
+        }
     }
-  }
-
-  &__description--text {
-    font-size: rem(14px);
-    font-weight: 300;
-    line-height: 2;
-
-    @include phones {
-      line-height: 1.5;
-      font-size: rem(14px);
+    &__info {
+        position: relative;
+        height: 80%;
+        display: flex;
+        width: 50%;
+        @include tablets {
+            text-align: center;
+            width: 100%;
+        }
+        @include phones {
+            width: 100%;
+        }
     }
-  }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    &__image {
+        position: relative;
+        display: flex;
+        height: 100%;
+        @include tablets {
+            justify-content: center;
+        }
+    }
+    &__main-pic {
+        align-self: center;
+        @include tablets {
+            padding-top: 88px;
+        }
+        @include phones {
+            width: 100%;
+        }
+    }
+    &__description--price {
+        @extend .section-title;
+        color: $red;
+        font-size: 30px;
+        margin: 0;
+        @include phones {
+            font-size: rem(26px);
+        }
+    }
+    &__description--price-btn {
+        display: flex;
+        align-items: baseline;
+        @include tablets {
+            justify-content: center;
+        }
+        @include phones {
+            font-size: rem(24px);
+            font-weight: 500;
+            margin-top: rem(20px);
+        }
+    }
+    &__description--price-number {
+        font-size: rem(70px);
+        @include phones {
+            font-size: rem(50px);
+            font-weight: 500;
+        }
+    }
+    &__description--text {
+        font-size: rem(14px);
+        font-weight: 300;
+        line-height: 2;
+        @include phones {
+            line-height: 1.5;
+            font-size: rem(14px);
+        }
+    }
+}
+
+.burgers__pic {
+    width: 500px;
 }
 
 .container__burgers {
-  height: 100vh;
-	min-height: rem(650px);
- 	position: relative;
- 	color: #fff;
- 	display: flex;
- 	justify-content: center;
- 	align-items: center;
-  flex-direction: row;
+    height: 100vh;
+    min-height: rem(650px);
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .burgers__title {
-  @extend .section-title;
-  color: #fff;
-  line-height: 1;
-
-  @include tablets {
-    width: rem(400px);
-    align-self: center;
-  }
-
-  @include phones {
-    font-size: rem(50px);
-  }
+    @extend .section-title;
+    color: #fff;
+    line-height: 1;
+    @include tablets {
+        width: rem(400px);
+        align-self: center;
+    }
+    @include phones {
+        font-size: rem(50px);
+    }
 }
 
 .burgers__order-button {
-  @extend .header__button;
-  padding: rem(9px) rem(15px);
-  margin-top: rem(-42px);
-
-  @include tablets {
-    margin: 10px;
-  }
+    @extend .header__button;
+    padding: rem(9px) rem(15px);
+    margin-top: rem(-42px);
+    @include tablets {
+        margin: 10px;
+    }
 }
 
 .button__arrow {
-	background: none;
-	border: 0;
-  outline: transparent;
-  
-  &--right-svg,
-  &--left-svg {
-    fill: #fff;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: .4s;
-  
-    &:hover {
-      fill: #e45028;
+    background: none;
+    border: 0;
+    outline: transparent;
+    z-index: 10;
+    @include tablets {
+        position: absolute;
     }
-  }
+    &--right-svg,
+    &--left-svg {
+        fill: #fff;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: .4s;
+        &:hover {
+            fill: #e45028;
+        }
+    }
+    &--right-svg {
+        transform: rotate(-90deg);
+    }
+    &--left-svg {
+        transform: rotate(90deg);
+    }
+}
 
-  &--right-svg {
-    transform: rotate(-90deg);
-  }
-
-  &--left-svg {
-    transform: rotate(90deg);
-  }
+.button__arrow--right {
+    @include tablets {
+        right: 0;
+    }
 }
 
 .small-burger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 90px;
-  background-color: $orange;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: .4s;
-
-  &:hover {
-    background-color: $red;
-    .ingredients {
-      height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background-color: $orange;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        background-color: $red;
+        .ingredients {
+            height: 100%;
+        }
     }
-  }
-
-  &__icon-svg {
-    fill: #fff;
-    width: 46px;
-    height: 44px;
-    transform: translate(50%, 30%);
-  }
-
-  &__title {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: gagalin;
-    transform: translate(24%, 50%);
-    display: block;
-  }
+    &__icon-svg {
+        fill: #fff;
+        width: 46px;
+        height: 44px;
+        transform: translate(50%, 30%);
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: gagalin;
+        transform: translate(24%, 50%);
+        display: block;
+    }
 }
 
 .burger__kkal {
-  position: absolute;
-  bottom: rem(32px);
-  left: 0;
-  width: 60px;
-  height: 60px;
-
-  @include tablets {
-    top: 0;
-    right: 0;
-    left: 85%;
-    top: rem(28px);
-  }
+    position: absolute;
+    bottom: rem(-75px);
+    left: 0;
+    width: 60px;
+    height: 60px;
+    @include tablets {
+        top: 0;
+        right: 0;
+        left: 85%;
+        top: rem(28px);
+    }
 }
 
 .burger__kkal-amount {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .kkal-amount__number {
-  position: absolute;
-  left: rem(15px);
-  top: rem(-5px);
-  font-family: gagalin;
-  font-size: rem(18px);
+    position: absolute;
+    left: rem(15px);
+    top: rem(-5px);
+    font-family: gagalin;
+    font-size: rem(18px);
 }
 
 .kkal-icon {
-  position: absolute;
-  bottom: rem(32px);
-  left: 0;
-  width: 60px;
-  height: 60px;
-
-  // @include tablets {
-  //   top: 0;
-  //   right: 0;
-  //   left: 85%;
-  // }
-
-  &__svg {
-    fill: #fff;
+    position: absolute;
+    bottom: rem(32px);
+    left: 0;
     width: 60px;
     height: 60px;
-  }
+    &__svg {
+        fill: #fff;
+        width: 60px;
+        height: 60px;
+    }
 }
 
 .burger__kkal-title {
-  position: absolute;
-  top: 25px;
-  left: 11px;
-  font-family: gagalin;
+    position: absolute;
+    top: 25px;
+    left: 11px;
+    font-family: gagalin;
 }
 
 .ingredients {
- // width: 50%;
-  //padding: 10px;
-  background-color: rgba(#fff, .8);
-  position: absolute;
-  top: 0;
-  left: rem(90px);
-  border-radius: 10px;  
-  display: flex;  
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-
-  &__list {
+    background-color: rgba(#fff, .8);
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding-right: 5%;
-  }
-
-  &__item {
-    color: $black;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding-right: 5%;
+    }
+    &__item {
+        color: $black;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
 
 .visible.ingredients {
-  width: 50%;
-  padding: 10px;
-  height: 60%;
-  transition: .5s;
-  opacity: 1;
+    width: rem(260px);
+    padding: 10px;
+    height: rem(300px);
+    transition: .5s;
+    opacity: 1;
+    z-index: 10;
 }

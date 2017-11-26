@@ -1,91 +1,75 @@
-@function rem($px) {
-	@return $px / 16px + 0rem;
-  }
-  
 .map {
-	height: 90vh;
-	min-height: rem(650px);
-	min-width: rem(940px);
-	position: relative;
-	background-color: #2f3234;
-	background: url(../img/map_bg.jpg) center center no-repeat;
-	background-size: cover;
+    height: 90vh;
+    min-height: rem(650px);
+    min-width: rem(940px);
+    position: relative;
+    background-color: #2f3234;
 }
 
 .footer {
-	position: absolute;
-	bottom: 0;
-	background: url(../img/footer_bg.jpg) center center no-repeat;
-	background-size: cover;
-	height: 10vh;
-	width: 100vw;
-
-	&__content {
-	display: flex;
-	width: 90%;
-	margin: 0 auto;
-	height: 100%;
-	align-items: center;
-
-		@include phones {
-			flex-direction: column;
-			text-align: center;
-		}
-	}
-
-	&__company-info {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	line-height: 1.5;
-
-		@include phones {
-			width: 100%;
-		}
-	}
-	
-	&__company-address {
-	color: #fff;
-	}
-
-	&__company-tel--number {
-	color: #e45028;
-	font-style: initial;
-	text-decoration: none;
-		&:before {
-			content: "";
-			background: url(../icons/phone.svg) center center no-repeat;
-			width: rem(10px);
-			height: rem(10px);
-			display: inline-block;
-			margin-right: rem(5px);
-		}
-	}
-
-	&__socials {
-		width: 50%;
-		text-align: right;
-
-		@include phones {
-			width: 100%;
-			text-align: center;
-		
-		}
-	}
+    position: absolute;
+    bottom: 0;
+    background: url(../img/footer_bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 10vh;
+    width: 100vw;
+    z-index: 5;
+    &__content {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+        align-items: center;
+        @include phones {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__company-info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        line-height: 1.5;
+        @include phones {
+            width: 100%;
+        }
+    }
+    &__company-address {
+        color: #fff;
+    }
+    &__company-tel--number {
+        color: #e45028;
+        font-style: initial;
+        text-decoration: none;
+        &:before {
+            content: "";
+            background: url(../icons/phone.svg) center center no-repeat;
+            width: rem(10px);
+            height: rem(10px);
+            display: inline-block;
+            margin-right: rem(5px);
+        }
+    }
+    &__socials {
+        width: 50%;
+        text-align: right;
+        @include phones {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .social-icon {
-	display: inline-block;
-	vertical-align: middle;
-	margin-left: rem(10px);
-	fill: #5B5B5B;
-	width: rem(20px);
-	height: rem(20px); 
-	cursor: pointer;
-	transition: .4s;
-	
-	&:hover {
-	fill: #fff;
-	}
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: rem(10px);
+    fill: #5B5B5B;
+    width: rem(20px);
+    height: rem(20px);
+    cursor: pointer;
+    transition: .4s;
+    &:hover {
+        fill: #fff;
+    }
 }
-
