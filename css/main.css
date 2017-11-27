@@ -332,15 +332,14 @@ footer {
 
 .next-page {
   position: relative;
-  bottom: 0;
+  bottom: -4.5rem;
   left: 50%; }
   @media screen and (max-width: 768px) {
     .next-page {
-      left: 47%;
-      top: 52px; } }
+      display: none; } }
   @media screen and (max-width: 480px) {
     .next-page {
-      left: 40%; } }
+      display: none; } }
 
 .next-page__button {
   background: none;
