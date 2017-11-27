@@ -137,7 +137,7 @@ $(function() {
         hintContent: '<div class="map__hint">ул. Литераторов, д.19</div>',
         balloonContent: [
           '<div class="map__balloon">',
-          '<img class="map__burger-img" src="/img/burger.png" alt="Бургерная" style="width: 35px;"/>',
+          '<img class="map__burger-img" src="../img/burger.png" alt="Бургерная" style="width: 35px;">',
           "Самые вкусные бургеры у нас! <br>Заходите по адресу: ул. Литераторов, д.19",
           "</div>"
         ]
@@ -148,7 +148,7 @@ $(function() {
         hintContent: '<div class="map__hint">Суворовский проспект, д 60</div>',
         balloonContent: [
           '<div class="map__balloon">',
-          '<img class="map__burger-img" src="/img/burger.png" alt="Бургерная" style="width: 35px;"/>',
+          '<img class="map__burger-img" src="../img/burger.png" alt="Бургерная" style="width: 35px;">',
           "Самые вкусные бургеры у нас! <br>Заходите по адресу: Суворовский проспект, д 60",
           "</div>"
         ]
@@ -159,7 +159,7 @@ $(function() {
         hintContent: '<div class="map__hint">Московский проспект, д 98</div>',
         balloonContent: [
           '<div class="map__balloon">',
-          '<img class="map__burger-img" src="/img/burger.png" alt="Бургерная" style="width: 35px;"/>',
+          '<img class="map__burger-img" src="../img/burger.png" alt="Бургерная" style="width: 35px;">',
           "Самые вкусные бургеры у нас! <br>Заходите по адресу: Московский проспект, д 98",
           "</div>"
         ]
@@ -170,7 +170,7 @@ $(function() {
         hintContent: '<div class="map__hint">Проспект Большевиков, д 6</div>',
         balloonContent: [
           '<div class="map__balloon">',
-          '<img class="map__burger-img" src="/img/burger.png" alt="Бургерная" style="width: 35px;"/>',
+          '<img class="map__burger-img" src="../img/burger.png" alt="Бургерная" style="width: 35px;">',
           "Самые вкусные бургеры у нас! <br>Заходите по адресу: Проспект Большевиков, д 6",
           "</div>"
         ]
