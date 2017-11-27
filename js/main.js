@@ -115,6 +115,12 @@ $(function() {
     }
   );
 
+  $('.next-page__button').on('click', function (event) {
+    event.preventDefault();
+
+    $onePageScroll.moveTo(2);
+  });
+
   $(".burger-menu__link").on("click", function(event) {
     event.preventDefault();
 
